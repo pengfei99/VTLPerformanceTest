@@ -27,7 +27,7 @@ By default the `trevas lab frontend(ui)` connect to localhost:8080 (default back
 
 ```shell
 # run the container with a env var MODULES=in-memory,spark/local and API_BASE_URL=10.50.5.88:8080
-docker run --env=MODULES=in-memory,spark/local --env=API_BASE_URL=10.50.5.88:8080 -p 80:80 --runtime=runc -d inseefrlab/trevas-lab-ui:0.3.4
+docker run --env=MODULES=in-memory,spark/local --env=API_BASE_URL=10.50.5.88:8080 --env=FILE_PATH_LOCATION=LOCAL -p 80:80 --runtime=runc -d inseefrlab/trevas-lab-ui:0.3.4
 ```
 
 > The MODULES=in-memory,spark/local indicates the frontend supports two types of trevas `in-memory` and `spark/local`. API_BASE_URL=10.50.5.88:8080 indicates the backend api url
