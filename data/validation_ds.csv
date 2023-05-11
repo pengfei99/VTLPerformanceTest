@@ -1,5 +1,5 @@
-Id_1,account_number,transaction_type,balance
-2011,1,CREDIT,23950
-2011,1,DEBIT,-2
-2012,1,CREDIT,10
-2012,1,DEBIT,2
+date,acc_number,transaction_type,transaction_amount,balance_after
+2011,1,CREDIT,250,23950
+2011,2,DEBIT,100,-2
+2012,3,CREDIT,1000,17800
+2012,4,DEBIT,200,20550
